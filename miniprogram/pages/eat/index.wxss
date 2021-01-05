@@ -1,0 +1,361 @@
+/* pages/eat/index.wxss */
+.all {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+.column {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* 外卖 */
+.food {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.search {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: blue;
+}
+.search input {
+  width: 90vw;
+  border-radius: 5vh;
+  background-color: #fff;
+}
+.content {
+  flex: 1;
+  display: flex;
+  position: relative;
+  /* height: 82vh; */
+}
+.content .left {
+  width: 20vw;
+  background-color: #fff;
+}
+.content .left .food_tab {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 10rpx 0;
+  background-color: #fff;
+}
+.content .right {
+  flex: 1;
+  height: 100%;
+  /* height: 82vh; */
+  background-color: #fff;
+}
+.content .right .title {
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: left;
+  margin: 0 30rpx 10rpx;
+  font-weight: 550;
+  font-size: 34rpx;
+  /* background-color: #fff; */
+}
+.content_item {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 200rpx;
+  margin: 0 10rpx 10rpx;
+  text-align: left;
+  background-color: rgb(244,244,244);
+  border-radius: 10rpx;
+}
+.content_item image {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 5rpx 8rpx;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605096555826&di=d52dc52d175f7f90428a40c7a61713e1&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F267f9e2f0708283804701eacbf99a9014c08f10d.jpg) ;
+  background-size: 100% 240%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  border-radius: 5rpx;
+}
+.content_item .countbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.content_item .countbtn icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  vertical-align: top;
+  border-radius: 50%;
+  margin: 12rpx;
+  color: #fff;
+  background-color: skyblue;
+}
+.content_item text {
+  display: block;
+  margin: 10rpx 8rpx;
+}
+.content_item .m_grey {
+  font-size: 24rpx;
+  color: grey;
+}
+.content_item .price {
+  color: red;
+}
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .4;
+}
+.shoppingcar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50rpx;
+  right: 0;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: teal;
+  opacity: .6;
+}
+.shoppingcar icon {
+  font-weight: 600;
+  font-size: 48rpx;
+}
+.shoppingcar_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #fff;
+}
+.shoppingcar_content .shoppingcar_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+}
+.shoppingcar_content .shoppingcar_top .commodities {
+  margin: 20rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+}
+.shoppingcar_content .shoppingcar_top .total {
+  margin: 10rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.shoppingcar_content .shoppingcar_top button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  background-color: skyblue;
+}
+.shoppingcar_content .shoppingcar_top .clearall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx;
+  font-size: 26rpx;
+}
+.shoppingcar_content .shoppingcar_top .clearall icon {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 订单 */
+.order {
+  height: 90vh;
+  background-color: rgb(244,244,244);
+}
+.order .orderitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  margin: 0 10rpx 10rpx 10rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.order .orderitem view {
+  width: 730rpx;
+  height: 100rpx;
+}
+.order .orderitem text {
+  margin: 20rpx;
+}
+.order .orderitem .ordermessage {
+  height: 200rpx;
+  border-top: #EEEEEE solid 2rpx;
+  border-bottom: #EEEEEE solid 2rpx;
+}
+.order .orderitem .ordermessage .order_list {
+  width: 610rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.order .orderitem .ordermessage .order_list .list_item {
+  width: 240rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.order .orderitem .ordermessage .order_list .list_item image {
+  width: 200rpx;
+  height: 150rpx;
+}
+.order .orderitem .ordermessage .order_list .list_item text {
+  margin: 0;
+}
+.order .orderitem .ordermessage .list_message {
+  width: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.order .orderitem .ordermessage .list_message .list_total {
+  font-size: 28rpx;
+}
+.order .orderitem .ordermessage .list_message .list_commodities {
+  font-size: 20rpx;
+  color: grey;
+}
+.order .orderitem .againorder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order .orderitem .againorder text {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.order .orderitem .againorder button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  width: 200rpx;
+  height: 60rpx;
+  color: #4D8EE1;
+  background-color: #fff;
+}
+.order .orderitem .againorder button::after {
+  border: #4D8EE1 solid 2rpx;
+}
+.flex_between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+/* 我的 */
+.mine {
+  height: 90vh;
+  background-color: rgb(244,244,244);
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.mine .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 20rpx;
+  border-bottom: #EEEEEE solid 2rpx;
+  background-color: #fff;
+}
+.mine .items:nth-child(1) {
+  height: 200rpx;
+}
+/* .toTop {
+  position: fixed;
+  bottom: 15vh;
+  right: 0;
+  width: 140rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 30rpx 0 0 30rpx;
+  opacity: .6;
+  background-color: burlywood;
+} */
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.word {
+  font-size: 24rpx;
+}
+.bottom .bottom_tab {
+  width: 140rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom .bottom_tab .icon {
+  font-weight: 700;
+}

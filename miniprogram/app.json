@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/eat/index",
+    "pages/eat/message"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4294F7",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "饿了么"
+  },
+  "sitemapLocation": "sitemap.json"
+}

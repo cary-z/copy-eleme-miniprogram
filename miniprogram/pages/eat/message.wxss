@@ -1,0 +1,21 @@
+/* pages/eat/message.wxss */
+view {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: rgb(244,244,244);
+}
+input {
+  width: 80vw;
+  height: 80rpx;
+  margin-top: 40rpx;
+  padding-left: 20rpx;
+  background-color: #fff;
+}
+button {
+  width: 20vw;
+  height: 80rpx;
+  margin-top: 40rpx;
+  font-size: 32rpx;
+  background-color: grey;
+}
